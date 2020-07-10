@@ -1,7 +1,6 @@
 DK_fitting Protocol
 
-Computes the diffusion tensor and kurtosis tensor values for a data set. Results are saved into the file name specified. Final results include lambda1, lambda2, lambda3, vec1, vec2, vec3, K1, K2, K3, MK, exitLog, resLog, R2Log.
-
+Computes the diffusion tensor and kurtosis tensor values for a data set. Results are saved into the file name specified. 
 Files Needed:
 •	Diffusion weighted images - .rec (float)
 •	Gradient direction file - .txt
