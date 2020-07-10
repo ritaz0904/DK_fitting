@@ -5,7 +5,7 @@ Computes the diffusion tensor and kurtosis tensor values for a data set. Results
 Files Needed:
 •	Diffusion weighted images - .rec (float)
 •	Gradient direction file - .txt
-•	Skull stripped mask file - .rec (int16)
+
 
 Output Files
 •	.mat – all DTI and DKI metrics
@@ -21,14 +21,8 @@ Locate and Place Necessary Files into Folders
 1.	Open Matlab
 2.	Go to directory with current DKI version
 3.	Place registered DWI into folder recFiles
-4.	Place mask file into folder maskFiles
-5.	Place gradient file into folder gradFiles
+54.	Place gradient file into folder gradFiles
 
-Create Mask MAT File
-1.	Locate your mask filename (ex: 35324_3_1_Mask.dat)
-2.	Call genMaskMAT(filename,outputFile,dim)
-
-genMaskMAT('maskFiles/35324_3_1_Mask.dat','maskFiles/adult1_mask.mat',[256 256 60]);
 
 Create DKI Options File
 1.	Open genDKIopt.m
@@ -40,7 +34,6 @@ i.	add f2name, f3name, etc. for additional files
 d.	gradientFile: gradient file name (.txt)
 e.	b_value1: first file b-value
 i.	add b_value2, b_value3, etc. for additioni b values
-f.	maskname: file name of mask for skull stripping (.mat)
 g.	S0thresh: intensity threshold for zero-gradient image
 h.	gradZeroIdx: specifies which gradient index is the zero gradient
 i.	outputFile: name of the output file (.mat)
@@ -53,7 +46,6 @@ options.f2name = 'recFiles/3T5324_2500.rec';
 options.gradientFile = 'gradFiles/Jones30_gradient.txt';
 options.b_value1 = 1000;
 options.b_value2 = 2500;
-options.maskname = 'maskFiles/adult1_mask.mat';
 options.S0thresh = 10;
 options.gradZeroIdx = 31;
 options.outputFile = 'outputFiles/DKinfo_adult1.mat';
