@@ -1,0 +1,24 @@
+DK_fitting
+
+Computes the diffusion tensor and kurtosis tensor values for a data set. Results are saved into the file name specified. Final results include lambda1, lambda2, lambda3, vec1, vec2, vec3, K1, K2, K3, MK, exitLog, resLog, R2Log.
+Follows the algorithm in the paper Tabesh A, Jensen JH, Ardekani BA, and Helpern JA. Estimation of tensors and tensor-derived measures in diffusional kurtosis imaging. Mag Reson Med. 2011 Mar;65(3):823-36.
+The software is developed by the group at
+Department of Radiology, Children's Hospital of Philadelphia,
+and Department of Radiology, Perelman School of Medicine, University of Pennsylvania
+directed by Dr. Hao Huang (Hao.Huang@pennmedicine.upenn.edu ).
+Maintainer: Tianjia Zhu (tianjiazhu6@gmail.com), Austin Ouyang
+
+The licence of the software is as follows:
+--------------------------------------------------------------------------------------------------------------
+DK_fitting Software
+Copyright (C) Department of Radiology, Children's Hospital of Philadelphia,
+and Department of Radiology, Perelman School of Medicine, University of Pennsylvania, PA, USA.
+All rights reserved.
+Web: https://www.med.upenn.edu/huanglab/
+DK_fitting is a free software. Permission to use, copy and distribute the software is granted,
+provided that this licence appears in all copies.DK_fitting is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+DK_fitting CAN NOT be used for commercial purposes. DK_fitting SHOULD NOT be used for medical purposes.
+The authors WILL NOT be responsible for using DK_fitting in medical conditions.
+--------------------------------------------------------------------------------------------------------------
+The copyrights of these codes are reserved by the original parties.
